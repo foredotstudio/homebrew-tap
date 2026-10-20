@@ -13,15 +13,15 @@ cask "vitals" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "Vitals.app"
   # The command asks the running app, so it comes with the app and is linked from inside it.
   binary "#{appdir}/Vitals.app/Contents/Helpers/vitals"
   manpage "#{appdir}/Vitals.app/Contents/Resources/vitals.1"
   bash_completion "#{appdir}/Vitals.app/Contents/Resources/vitals.bash"
-  fish_completion "#{appdir}/Vitals.app/Contents/Resources/vitals.fish"
   zsh_completion "#{appdir}/Vitals.app/Contents/Resources/_vitals"
+  fish_completion "#{appdir}/Vitals.app/Contents/Resources/vitals.fish"
 
   uninstall launchctl: "com.forestudio.Vitals.helper",
             quit:      "com.forestudio.Vitals"
