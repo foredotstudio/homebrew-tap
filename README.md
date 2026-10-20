@@ -1,7 +1,7 @@
 # Fore Studio's Homebrew tap
 
 ```sh
-brew install --cask forestudio/tap/vitals
+brew install --cask foredotstudio/tap/vitals
 ```
 
 [Vitals](https://vitalsmac.com) is an Activity Monitor alternative for Mac: 60 apps instead of 1,000 processes, up to a year of history, the coding agents you run and what is left of your AI plans, in a window and the menu bar.
