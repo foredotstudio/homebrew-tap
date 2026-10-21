@@ -23,8 +23,11 @@ cask "vitals" do
   zsh_completion "#{appdir}/Vitals.app/Contents/Resources/_vitals"
   fish_completion "#{appdir}/Vitals.app/Contents/Resources/vitals.fish"
 
+  # quit asks through System Events, which a Terminal without Automation access can't; the
+  # signal ends it anyway.
   uninstall launchctl: "com.forestudio.Vitals.helper",
-            quit:      "com.forestudio.Vitals"
+            quit:      "com.forestudio.Vitals",
+            signal:    [["TERM", "com.forestudio.Vitals"]]
 
   zap trash: [
     "~/Library/Application Support/Vitals",
