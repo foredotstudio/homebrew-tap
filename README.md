@@ -21,3 +21,17 @@ Vitals updates itself, so `brew upgrade` leaves it alone. To remove it and its d
 ```sh
 brew uninstall --zap --cask vitals
 ```
+
+## Levers
+
+```sh
+brew install --cask foredotstudio/tap/levers
+```
+
+[Levers](https://leversmac.com) is a Mac menu bar app that hides your desktop icons, the Dock, other apps and menu bar icons before you record or share your screen, and puts everything back with one click. It needs a license key to turn things on.
+
+Levers updates itself too. To remove it and its data:
+
+```sh
+brew uninstall --zap --cask levers
+```
