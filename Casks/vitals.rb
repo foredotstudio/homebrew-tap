@@ -24,18 +24,19 @@ cask "vitals" do
   fish_completion "#{appdir}/Vitals.app/Contents/Resources/vitals.fish"
 
   # quit asks through System Events, which a Terminal without Automation access can't; the
-  # signal ends it anyway.
-  uninstall launchctl: "com.forestudio.Vitals.helper",
-            quit:      "com.forestudio.Vitals",
-            signal:    [["TERM", "com.forestudio.Vitals"]]
+  # signal ends it anyway. The helper is not unloaded here: uninstall runs on every upgrade
+  # too, and macOS kept the helper's registration as on while nothing ran it.
+  uninstall quit:   "com.forestudio.Vitals",
+            signal: [["TERM", "com.forestudio.Vitals"]]
 
-  zap trash: [
-    "~/Library/Application Support/Vitals",
-    "~/Library/Caches/com.forestudio.Vitals",
-    "~/Library/HTTPStorages/com.forestudio.Vitals",
-    "~/Library/Preferences/com.forestudio.Vitals.plist",
-    "~/Library/Saved Application State/com.forestudio.Vitals.savedState",
-  ]
+  zap launchctl: "com.forestudio.Vitals.helper",
+      trash:     [
+        "~/Library/Application Support/Vitals",
+        "~/Library/Caches/com.forestudio.Vitals",
+        "~/Library/HTTPStorages/com.forestudio.Vitals",
+        "~/Library/Preferences/com.forestudio.Vitals.plist",
+        "~/Library/Saved Application State/com.forestudio.Vitals.savedState",
+      ]
 
   caveats <<~EOS
     vitals answers from the running app. Open Vitals, then turn on
