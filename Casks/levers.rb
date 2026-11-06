@@ -1,10 +1,10 @@
 cask "levers" do
-  version "1.2.2"
-  sha256 "552e070b3874a8bacc2c70ac2f2053d86aa27b7f7b26df019cc00e29cb2eaf88"
+  version "1.3"
+  sha256 "7e6c61d82a1c026d30d98643ff7dc5d89b3fe39fcc59d7e9b8c66008abd449ca"
 
   url "https://statics.fore.studio/levers/downloads/Levers-#{version}.dmg"
   name "Levers"
-  desc "Menu bar app that clears the desktop, Dock and menu bar before you record"
+  desc "Menu bar switches and modes for system settings, with a command palette"
   homepage "https://leversmac.com/"
 
   livecheck do
