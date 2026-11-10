@@ -1,6 +1,6 @@
 cask "levers" do
-  version "1.4"
-  sha256 "db35ee8d529bef2133150d22e7fe5fbfeac9d4cdf50f732235030bc08b69ee7d"
+  version "1.5"
+  sha256 "f6a9d9e2a085d54ae60f1cb5a172e065d760fc4e1b5d5f56da0ab42abb5c28ab"
 
   url "https://statics.fore.studio/levers/downloads/Levers-#{version}.dmg"
   name "Levers"
