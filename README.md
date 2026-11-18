@@ -35,3 +35,17 @@ Levers updates itself too. To remove it and its data:
 ```sh
 brew uninstall --zap --cask levers
 ```
+
+## SoundBar
+
+```sh
+brew install --cask foredotstudio/tap/soundbar
+```
+
+[SoundBar](https://soundbarmac.com) is a volume mixer for Mac that lives in the notch and the menu bar: a slider from 0 to 200% for every app that plays sound, with mute, its own equalizer and balance, and its own output, so music can play on the speakers while a call goes to your AirPods. Every feature is free for three days; after that it needs a license key.
+
+SoundBar updates itself too. To remove it and its data:
+
+```sh
+brew uninstall --zap --cask soundbar
+```
