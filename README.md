@@ -28,7 +28,7 @@ brew uninstall --zap --cask vitals
 brew install --cask foredotstudio/tap/levers
 ```
 
-[Levers](https://leversmac.com) is a Mac menu bar app that hides your desktop icons, the Dock, other apps and menu bar icons before you record or share your screen, and puts everything back with one click. It needs a license key to turn things on.
+[Levers](https://leversmac.com) is a menu bar manager for Mac, a Bartender alternative: it hides the menu bar icons you choose and brings them back on a hover, a click or a hotkey, and ⌃⌥Space opens any of them from the keyboard. It also has one-click switches for Dark Mode, Night Shift, Do Not Disturb, Keep Awake, the Dock and more, modes that throw several at once, and Recording Mode, which clears the screen when you share or record it and puts it all back after. Every feature is free for three days; after that it needs a license key.
 
 Levers updates itself too. To remove it and its data:
 
