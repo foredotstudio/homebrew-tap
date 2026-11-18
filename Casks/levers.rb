@@ -4,7 +4,7 @@ cask "levers" do
 
   url "https://statics.fore.studio/levers/downloads/Levers-#{version}.dmg"
   name "Levers"
-  desc "Menu bar switches and modes for system settings, with a command palette"
+  desc "Menu bar manager with switches, modes and a command palette"
   homepage "https://leversmac.com/"
 
   livecheck do
