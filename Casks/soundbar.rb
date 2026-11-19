@@ -1,6 +1,6 @@
 cask "soundbar" do
-  version "1.0.2"
-  sha256 "b3130f008436eb6ab3b2d2def62480aad3697dafb99754446ade6f0a3212be47"
+  version "1.0.3"
+  sha256 "1fa4be19085c799cf5b6448de256cbeaca7829ea18f24d0d98e626d34d8fb610"
 
   url "https://statics.fore.studio/soundbar/downloads/SoundBar-#{version}.dmg"
   name "SoundBar"
